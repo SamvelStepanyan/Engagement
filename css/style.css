@@ -71,11 +71,17 @@
     }
     
     .invatation__text {
+        padding: 0 10px;
         font-family: 'Oswald', sans-serif;
         list-style: none;
-        padding-top: 200px;
         font-size: 25px;
         color: #4b4343;
+    }
+
+    .invatation__container  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     li {
