@@ -27,7 +27,7 @@
     list-style: none;
     font-family: 'Playfair Display', serif;
     color: #fcfcfc;
-    font-weight: 100;
+/*     font-weight: 100; */
     font-size: 3.5rem;
     margin-top: -330px;
 }
@@ -103,7 +103,7 @@ li {
         object-fit: cover;
     }
     .header__title {
-        font-weight: 100;
+/*         font-weight: 100; */
         font-size: 3.5rem;
         margin-top: -330px;
     }
