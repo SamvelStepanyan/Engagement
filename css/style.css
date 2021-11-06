@@ -1,75 +1,144 @@
-    *,
-    *::after,
-    *::before {
-        box-sizing: border-box;
-    }
-    
-    .container {
-        background-image: url(../images/Engagement_bg-2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        height: 100vh;
-        background-position: center;
-        text-align: center;
-    }
-    
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../fonts/PlayfairDisplay-Italic.ttf") format("ttf");
+}
+
+.container {
+    background-image: url(../images/Engagement_bg-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    background-position: center;
+    text-align: center;
+}
+
+.header__img {
+    width: 480px;
+}
+
+.header__title {
+    list-style: none;
+    font-family: 'Playfair Display', serif;
+    color: #fcfcfc;
+    font-weight: 100;
+    font-size: 3.5rem;
+    margin-top: -330px;
+}
+
+.header__subtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #fcfcfc;
+    font-weight: 43;
+    font-size: 20px;
+}
+
+.day {
+    list-style: none;
+}
+
+.date {
+    margin: 1%;
+    font-size: 70px;
+    list-style: none;
+}
+
+.month {
+    list-style: none;
+}
+
+.tiler__title {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.timer {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+span {
+    display: block;
+    padding: 20px 25px;
+}
+
+.invatation__text {
+    font-family: 'Oswald', sans-serif;
+    list-style: none;
+    padding-top: 200px;
+    font-size: 25px;
+    color: #4b4343;
+}
+
+li {
+    padding-top: 7px;
+}
+
+.restaurant-img {
+    max-width: 480px;
+}
+
+.map {
+    max-width: 480px;
+    height: 300px;
+}
+
+@media (max-width:480px) {
     .header__img {
-        width: 480px;
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
     }
-    
     .header__title {
-        list-style: none;
-        font-family: 'Playfair Display', serif;
-        color: #fcfcfc;
         font-weight: 100;
         font-size: 3.5rem;
         margin-top: -330px;
     }
-    
-    .header__subtitle {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        color: #fcfcfc;
-        font-weight: 43;
-        font-size: 20px;
-    }
-    
-    .day {
-        list-style: none;
-    }
-    
-    .date {
-        margin: 1%;
-        font-size: 70px;
-        list-style: none;
-    }
-    
-    .month {
-        list-style: none;
-    }
-    
     .tiler__title {
-        font-family: 'Montserrat', sans-serif;
-        color: white;
-        font-size: 20px;
+        font-size: 17px;
         padding-top: 10px;
     }
-    
-    .timer {
-        font-family: 'Montserrat', sans-serif;
-        color: white;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    .invatation__text {
+        font-size: 20px;
     }
-    
-    span {
-        display: block;
-        padding: 20px 25px;
+    .restaurant-img {
+        height: 50vh;
+        width: 100%;
     }
-    
+    .map {
+        height: 50vh;
+        width: 100%;
+    }
+}
+
+@media (max-width:390px) {
+    .header__img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    .header__title {
+        font-size: 2rem;
+    }
+    .timer__title {
+        font-size: 14px;
+    }
+    .timer span {
+        font-size: 14px;
+    }
     .invatation__text {
         padding: 0 10px;
         font-family: 'Oswald', sans-serif;
@@ -77,26 +146,22 @@
         font-size: 25px;
         color: #4b4343;
     }
-
-    .invatation__container  {
+    .invatation__container {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
     li {
         padding-top: 7px;
     }
-    
     .restaurant-img {
-        max-width: 480px;
+        height: 50vh;
+        width: 100%;
     }
-    
     .map {
-        max-width: 480px;
-        height: 300px;
+        height: 50vh;
+        width: 100%;
     }
-    
     @media (max-width:480px) {
         .header__img {
             height: 100vh;
@@ -108,13 +173,13 @@
             font-size: 2rem;
         }
         .date {
-        font-size: 60px;
-        padding-top: 22px;
-    }
-    .tiler__title {
-        font-size: 17px;
-        padding-top: 10px;
-    }
+            font-size: 60px;
+            padding-top: 22px;
+        }
+        .tiler__title {
+            font-size: 17px;
+            padding-top: 10px;
+        }
         .invatation__text {
             font-size: 20px;
         }
@@ -127,7 +192,6 @@
             width: 100%;
         }
     }
-    
     @media (max-width:390px) {
         .header__img {
             height: 100vh;
@@ -156,10 +220,10 @@
             width: 100%;
         }
     }
-    
     @media (max-width:320px) {
         .invatation__text {
             font-size: 15px;
             padding-top: 250px;
         }
     }
+}
