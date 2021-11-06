@@ -23,7 +23,7 @@
         font-family: 'Playfair Display', serif;
         color: #fcfcfc;
         font-weight: 100;
-         font-size: calc(35px + 25 * (100vw / 1400));
+        font-size: 2rem;
         margin-top: -330px;
     }
     
