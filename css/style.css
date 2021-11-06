@@ -23,7 +23,7 @@
         font-family: 'Playfair Display', serif;
         color: #fcfcfc;
         font-weight: 100;
-        font-size: 60px;
+         font-size: calc(35px + 25 * (100vw / 1400));
         margin-top: -330px;
     }
     
@@ -105,8 +105,16 @@
         }
         .header__title {
             font-weight: 100;
-            font-size: 50px;
+            font-size: calc(35px + (25 + 25 * 0.7) ((100vw - 320px) / 1400));
         }
+        .date {
+        font-size: 60px;
+        padding-top: 22px;
+    }
+    .tiler__title {
+        font-size: 17px;
+        padding-top: 10px;
+    }
         .invatation__text {
             font-size: 20px;
         }
@@ -136,7 +144,7 @@
             font-size: 14px;
         }
         .invatation__text {
-            font-size: 20px;
+        font-size: calc(35px + (25 + 25 * 0.7) ((100vw - 320px) / 1400));
             padding-top: 250px;
         }
         .restaurant-img {
