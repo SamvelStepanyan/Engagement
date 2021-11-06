@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "Playfair Display";
-    src: url("/Engagement/fonts/PlayfairDisplay-Italic.ttf") format("ttf");
-}
-
 .container {
     background-image: url(/Engagement/images/Engagement_bg-2.jpg);
     background-repeat: no-repeat;
