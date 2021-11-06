@@ -6,11 +6,11 @@
 
 @font-face {
     font-family: "Playfair Display";
-    src: url("fonts/PlayfairDisplay-Italic.ttf") format("ttf");
+    src: url("/Engagement/fonts/PlayfairDisplay-Italic.ttf") format("ttf");
 }
 
 .container {
-    background-image: url(images/Engagement_bg-2.jpg);
+    background-image: url(/Engagement/images/Engagement_bg-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
